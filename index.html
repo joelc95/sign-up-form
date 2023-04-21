@@ -5,30 +5,55 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Odin Project: Sign-Up</title>
-  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href='./css/style.css'>
+  <script src="./scripts/script.js"></script>
 </head>
 <body>
-  <div class="form-container">
-    <form>
-      <ul>
-        <li>
-          <label for="name">Name</label>
-          <input name='name' type="text">
-        </li>
-        <li>
-          <label for="email">Email</label>
-          <input name='email' type="email">
-        </li>
-        <li>
-          <label for="password">Password</label>
-          <input name='password' type="password">
-        </li>
-        <li>
-          <label for="confirm-password">Confirm Password</label>
-          <input name='confirm-password' type="password">
-        </li>
-      </ul>
-    </form>
+  <div class="left-container">
+    <p>
+      pic and logo here
+    </p>
+  </div>
+  <div class="right-container">
+    <div class="header-container">
+      <p>
+        This is not a real online service! Blah blah blah! Rhubarb rhubarb...
+      </p>
+      <p>
+        Sign up below...
+      </p>
+    </div>
+    <div class="form-container">
+      <form autocomplete="off" id="form1">
+        <ul>
+          <li>
+            <!-- <label for="name">Name</label> -->
+            <input class="form-input" name='first-name' type="text" placeholder='first name'required="">
+          </li>
+          <li>
+            <input name="last-name" type="text" placeholder="last name" required="">
+          </li>
+          <li>
+            <!-- <label for="email">Email</label> -->
+            <input name='email' type="email" placeholder='email' required="">
+          </li>
+          <li>
+            <input name="phone-number" type="text" placeholder="phone number" >
+          </li>
+          <li>
+            <!-- <label for="password">Password</label> -->
+            <input id='password' name='password' type="password" placeholder="password" required="">
+          </li>
+          <li>
+            <!-- <label for="confirm-password">Confirm Password</label> -->
+            <input name='confirm-password' type="password" placeholder="confirm password" required="">
+          </li>
+        </ul>
+      </form>
+    </div>
+    <div class="button-container">
+      <button type="submit" form="form1">Continue</button>
+    </div>
   </div>
 </body>
 </html>
