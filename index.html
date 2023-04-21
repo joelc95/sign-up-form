@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Odin Project: Sign-Up</title>
   <link rel="stylesheet" href='./css/style.css'>
-  <script src="./scripts/script.js"></script>
+  <script src="./scripts/script.js" defer></script>
 </head>
 <body>
   <div class="left-container">
@@ -24,7 +24,7 @@
       </p>
     </div>
     <div class="form-container">
-      <form autocomplete="off" id="form1">
+      <form autocomplete="off" id="form1" onsubmit={checkPasswords()}>
         <ul>
           <li>
             <!-- <label for="name">Name</label> -->
@@ -46,7 +46,7 @@
           </li>
           <li>
             <!-- <label for="confirm-password">Confirm Password</label> -->
-            <input name='confirm-password' type="password" placeholder="confirm password" required="">
+            <input id="confirm-password" name='confirm-password' type="password" placeholder="confirm password" required="">
           </li>
         </ul>
       </form>
@@ -56,4 +56,5 @@
     </div>
   </div>
 </body>
+
 </html>
