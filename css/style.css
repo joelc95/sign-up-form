@@ -1,0 +1,43 @@
+body {
+  margin: 0;
+  height: 100vh;
+  border: black dashed 2px;
+  display: flex;
+}
+
+.left-container {
+  border: red solid 2px;
+  width: 35vw;
+}
+
+.right-container {
+  width: 65vw;
+}
+
+.header-container {
+  height: 25%;
+  border: blue solid 2px;
+}
+
+.form-container {
+  height: 40%;
+  
+  border: green solid 2px;
+}
+
+ul {
+  margin-top: 10%;
+}
+
+li {
+  display: inline;
+}
+
+li input {
+  margin-bottom: 10px;
+  width: 45%;
+}
+
+.button-container {
+  border: pink solid 2px;;
+}
