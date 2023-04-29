@@ -12,3 +12,10 @@ checkPasswords = () => {
   // If passwords match
   return true
 }
+
+document.querySelectorAll(".password-input").forEach(element => {
+  console.log(element)
+  element.addEventListener("focusout", (event) => {
+    checkPasswords()
+  })
+});
