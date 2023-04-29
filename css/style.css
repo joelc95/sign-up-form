@@ -58,7 +58,7 @@ body {
   height: 25%;
   justify-content: flex-end;
   color: white;
-  padding-left: 6%;
+  padding-left: 2%;
 }
 
 .header-container h3 {
@@ -92,10 +92,28 @@ li {
   padding-bottom: 10px;
   border-radius: 10px;
   border: 0;
+  background-color: rgb(198, 198, 198);
+  transition: transform 0.2s, outline 0.2s;
+}
+
+.form-input:focus {
+  outline: none;
+  background-color: white;
+  transform: scale(1.01);
 }
 
 .button-container {
-  padding-left: 6%;
+  padding-left: 2%;
+}
+
+.submit-button {
+  padding: 7px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 10px;
+  border: none;
+  width: 100px;
+  cursor: pointer;
 }
 
 
